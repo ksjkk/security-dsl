@@ -9,8 +9,9 @@ boot 3.0 부터, 정확히는 Security 5.8 부터 HttpSecurityDsl 을 통해 Dsl
 ---
 
 ```kotlin
-...
-import org.springframework.security.config.annotation.web.invoke  // 요게 포인트! 없으면 http dsl 이 적용안됨
+..
+// 요게 포인트! 없으면 http dsl 이 적용안됨, Unresolved reference.
+import org.springframework.security.config.annotation.web.invoke
 import org.springframework.security.web.SecurityFilterChain
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter
 
